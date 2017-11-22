@@ -17,8 +17,19 @@
 html,body{
   height:100%;
 }
+table.table-bordered th{
+  text-align: center;
+  vertical-align: middle;
+}
+table.table-bordered tr td{
+  text-align: center;
+  vertical-align: middle;
+}
 a:hover,a:active{
   text-decoration: none;
+}
+.btn_add{
+  margin-bottom: 20px;
 }
 .ad_aside{
   width:180px;

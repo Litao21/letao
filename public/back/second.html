@@ -58,7 +58,23 @@
       <li class="active">二级分类</li>
     </ol>
     <div class="content">
-    
+      <button class="btn btn-default btn_add">添加分类</button>
+      <table class="table table-bordered">
+        <thead>
+        <tr>
+          <th width="10%">序号</th>
+          <th width="30%">一级分类</th>
+          <th width="30%">二级分类</th>
+          <th width="30%">二级分类LOGO</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!--挖个坑-->
+        </tbody>
+      </table>
+      <div class="text-right">
+        <ul id="paginator"></ul>
+      </div>
     </div>
   </div>
 </div>
@@ -83,13 +99,26 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
+<script type="text/html" id="tmp">
+  {{each rows v i}}
+    <tr>
+      <td>{{(page-1)*size+i+1}}</td>
+      <td>{{v.categoryName}}</td>
+      <td>{{v.brandName}}</td>
+      <td>
+        <img src="{{v.brandLogo}}" width="50px" height="50px">
+      </td>
+    </tr>
+  {{/each}}
+</script>
 <script src="lib/jquery/jquery.js"></script>
 <script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/bootstrap-paginator/bootstrap-paginator.js"></script>
 <script src="lib/bootstrap-validator/js/bootstrapValidator.js"></script>
 <script src="lib/nprogress/nprogress.js"></script>
 <script src="lib/echarts/echarts.min.js"></script>
-<script src="./js/login.js"></script>
+<script src="lib/artTemplate/template-web.js"></script>
 <script src="js/common.js"></script>
+<script src="js/second.js"></script>
 </body>
 </html>
