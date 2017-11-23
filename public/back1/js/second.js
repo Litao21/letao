@@ -141,7 +141,6 @@ $(function () {
   //给表单注册校验成功事件
   $form.on("success.form.bv", function (e) {
     e.preventDefault();
-
     //发送ajax
     $.ajax({
       type: "post",

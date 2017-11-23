@@ -17,6 +17,7 @@
 html,body{
   height:100%;
 }
+
 table.table-bordered th{
   text-align: center;
   vertical-align: middle;
@@ -115,4 +116,21 @@ a:hover,a:active{
 .pic_right {
   width: 45%;
   height: 400px;
+}
+.fileupload_box {
+  width: 82px;
+  height: 34px;
+  position: relative;
+}
+#fileupload{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  opacity:0;
+}
+.fileupload_box:hover button {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
 }
