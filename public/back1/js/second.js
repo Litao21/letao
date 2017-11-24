@@ -5,7 +5,7 @@ $(function () {
 
   //二级分类的分页渲染功能
   var currentPage = 1;
-  var pageSize = 5;
+  var pageSize = 10;
 
   function render() {
 
@@ -141,6 +141,7 @@ $(function () {
   //给表单注册校验成功事件
   $form.on("success.form.bv", function (e) {
     e.preventDefault();
+
     //发送ajax
     $.ajax({
       type: "post",
